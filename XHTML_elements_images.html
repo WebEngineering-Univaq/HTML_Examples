@@ -1,0 +1,104 @@
+<!doctype html>
+
+<html>
+    <head>
+        <title>Gli elementi di XHTML: le immagini</title>
+        <link rel="stylesheet" href="iw_examples.css" type="text/css"/>
+        <meta charset="utf-8"/>
+    </head>
+    <body>
+        <h1 class="sezione">Le Immagini</h1>
+
+        <div class="esempi">
+            <div class="esempio"><div class="rendering">
+                    <p>Standard: <img src="big_info_2.gif" alt="Testo alternativo" />
+                    </p>
+                </div><div class="sorgente"><p> &lt;img src=&quot;big_info_2.gif&quot; alt=&quot;Testo alternativo&quot; /&gt; </div></div><div class="esempio"><div class="rendering">
+                    <p>Non caricata: <img src="big_info_3.gif" alt="Testo alternativo" />
+                    </p>
+                </div><div class="sorgente"><p> &lt;img src=&quot;big_info_3.gif&quot; alt=&quot;Testo alternativo&quot; /&gt; </div></div><div class="esempio"><div class="rendering">
+                    <p>Dimensione orizzontale=100: <img src="big_info_2.gif" width="100" alt="Testo alternativo" />
+                    </p>
+                </div><div class="sorgente"><p> &lt;img src=&quot;big_info_2.gif&quot; width=&quot;100&quot; alt=&quot;Testo alternativo&quot; /&gt; </div></div><div class="esempio"><div class="rendering">
+                    <p>Dimensione verticale=100: <img src="big_info_2.gif" height="100" alt="Testo alternativo" />
+                    </p>
+                </div><div class="sorgente"><p> &lt;img src=&quot;big_info_2.gif&quot; height=&quot;100&quot; alt=&quot;Testo alternativo&quot; /&gt; </div></div><div class="esempio"><div class="rendering">
+                    <p>Dimensioni 50x100: <img src="big_info_2.gif" width="50" height="100" alt="Testo alternativo" />
+                    </p>
+                </div><div class="sorgente"><p> &lt;img src=&quot;big_info_2.gif&quot; width=&quot;50&quot; height=&quot;100&quot; alt=&quot;Testo alternativo&quot; /&gt; </div></div><div class="esempio"><div class="rendering">
+                    <p>Con longdesc: <img src="big_info_2.gif" longdesc="desc.html" alt="Testo alternativo"/>
+                    </p>
+                </div><div class="sorgente"><p> &lt;img src=&quot;big_info_2.gif&quot; longdesc=&quot;desc.html&quot; alt=&quot;Testo alternativo&quot;/&gt; </div></div></div>
+
+
+        <h2 class="sezione">Link con immagini</h2>
+
+        <div class="esempi">
+
+
+
+            <div class="esempio"><div class="rendering">
+                    <p>Normale: <a href="pippo.php">
+                            <img src="big_info_2.gif" alt="Testo alternativo" />
+                        </a>
+                    </p>
+                </div><div class="sorgente"><p> &lt;a href=&quot;pippo.php&quot;&gt;
+                        &lt;img src=&quot;big_info_2.gif&quot; alt=&quot;Testo alternativo&quot; /&gt;
+                        &lt;/a&gt; </div></div><div class="esempio"><div class="rendering">
+                    <p>
+                        Server-side map: <a href="pippo.php">
+                            <img src="big_info_2.gif" ismap="ismap" alt="Testo alternativo" />
+                        </a>
+                    </p>
+                </div><div class="sorgente"><p> &lt;a href=&quot;pippo.php&quot;&gt;
+                        &lt;img src=&quot;big_info_2.gif&quot; ismap=&quot;ismap&quot; alt=&quot;Testo alternativo&quot; /&gt;
+                        &lt;/a&gt; </div></div><div class="esempio"><div class="rendering">
+                    <p>
+                        <map id="mappa" name="mappa">
+                            <area alt="prima" shape="rect" coords="0,0,5,5" href="area1.php" />
+                            <area alt="seconda" shape="circle" coords="20,20,5" href="area2.php" />
+                        </map>	
+
+                        Client-side map con aree:
+                        <img src="big_info_2.gif" usemap="#mappa" alt="Testo alternativo" />
+                    </p>
+                </div><div class="sorgente"><p>                     &lt;map id=&quot;mappa&quot; name=&quot;mappa&quot;&gt;
+                        &lt;area alt=&quot;prima&quot; shape=&quot;rect&quot; coords=&quot;0,0,5,5&quot; href=&quot;area1.php&quot; /&gt;
+                        &lt;area alt=&quot;seconda&quot; shape=&quot;circle&quot; coords=&quot;20,20,5&quot; href=&quot;area2.php&quot; /&gt;
+                        &lt;/map&gt;	
+
+                        &lt;img src=&quot;big_info_2.gif&quot; usemap=&quot;#mappa&quot; alt=&quot;Testo alternativo&quot; /&gt;                </div>
+                        </div><div class="esempio"><div class="rendering">
+                    <p>
+                        <map id="mappa2" name="mappa2">
+                            <p>
+                                <a shape="rect" coords="0,0,5,5" href="area1.php">area1</a>
+                            </p>
+                            <p>
+                                <a shape="circle" coords="20,20,5" href="area2.php">area2</a>
+                            </p>
+                        </map>	
+
+                        Client-side map con link:
+                        <img src="big_info_2.gif" usemap="#mappa2" alt="Testo alternativo" />
+                    </p>
+                </div><div class="sorgente"><p>                     &lt;map id=&quot;mappa2&quot; name=&quot;mappa2&quot;&gt;
+                        &lt;p&gt;
+                        &lt;a shape=&quot;rect&quot; coords=&quot;0,0,5,5&quot; href=&quot;area1.php&quot;&gt;area1&lt;/a&gt;
+                        &lt;/p&gt;
+                        &lt;p&gt;
+                        &lt;a shape=&quot;circle&quot; coords=&quot;20,20,5&quot; href=&quot;area2.php&quot;&gt;area2&lt;/a&gt;
+                        &lt;/p&gt;
+                        &lt;/map&gt;	
+                        &lt;img src=&quot;big_info_2.gif&quot; usemap=&quot;#mappa2&quot; alt=&quot;Testo alternativo&quot; /&gt;                </div></div><div class="esempio"><div class="rendering">
+                    <p>
+
+                        Client-side map mescolata a link esterno: <a href="pippo.php">
+                            <img src="big_info_2.gif" usemap="#mappa" alt="Testo alternativo" />
+                        </a>
+                    </p>
+                </div><div class="sorgente"><p>                    &lt;a href=&quot;pippo.php&quot;&gt;
+                        &lt;img src=&quot;big_info_2.gif&quot; usemap=&quot;#mappa&quot; alt=&quot;Testo alternativo&quot; /&gt;
+                        &lt;/a&gt;                    </p></div></div></div>
+    </body>
+</html>

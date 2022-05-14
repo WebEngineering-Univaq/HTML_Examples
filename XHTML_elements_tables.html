@@ -1,0 +1,769 @@
+<!doctype html>
+
+<html >
+    <head>
+        <title>Gli elementi di XHTML: le tabelle</title>
+        <link rel="stylesheet" href="iw_examples.css" type="text/css"/>
+        <meta charset="utf-8"/>
+    </head>
+    <body>
+        <h1 class="sezione">Tabelle</h1>
+
+        <h2 class="sezione">Tabella di base</h2>
+
+        <div class="esempi">
+
+            <div class="esempio"><div class="rendering">
+                    <table>
+                        <tr>
+                            <th>Intestazione 1</th>
+                            <th>Intestazione 2</th>
+                            <th>Intestazione 3</th>
+                        </tr>
+                        <tr>
+                            <td>Cella 1,1</td>
+                            <td>Cella 1,2</td>
+                            <td>Cella 1,3</td>
+                        </tr>
+                        <tr>
+                            <td>Cella 2,1</td>
+                            <td>Cella 2,2</td>
+                            <td>Cella 2,3</td>
+                        </tr>
+                        <tr>
+                            <td>Cella 3,1</td>
+                            <td>Cella 3,2</td>
+                            <td>Cella 3,3</td>
+                        </tr>
+                    </table>
+
+                </div><div class="sorgente"><p>                        &lt;table&gt;
+                        &lt;tr&gt;
+                        &lt;th&gt;Intestazione 1&lt;/th&gt;
+                        &lt;th&gt;Intestazione 2&lt;/th&gt;
+                        &lt;th&gt;Intestazione 3&lt;/th&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                        &lt;td&gt;Cella 1,1&lt;/td&gt;
+                        &lt;td&gt;Cella 1,2&lt;/td&gt;
+                        &lt;td&gt;Cella 1,3&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                        &lt;td&gt;Cella 2,1&lt;/td&gt;
+                        &lt;td&gt;Cella 2,2&lt;/td&gt;
+                        &lt;td&gt;Cella 2,3&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                        &lt;td&gt;Cella 3,1&lt;/td&gt;
+                        &lt;td&gt;Cella 3,2&lt;/td&gt;
+                        &lt;td&gt;Cella 3,3&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;/table&gt;
+                </p></div></div></div>
+
+        <h2 class="sezione">Bordo e celle non specificate</h2>
+
+        <div class="esempi">
+
+            <div class="esempio"><div class="rendering">
+
+                    <table border="1">
+                        <tr>
+                            <th>Intestazione 1</th>
+                            <th>Intestazione 2</th>
+                        </tr>
+                        <tr>
+                            <td>Cella 1,1</td>
+                            <td>Cella 1,2</td>
+                            <td>Cella 1,3</td>
+                        </tr>
+                        <tr>
+                            <td>Cella 2,1</td>
+                            <td>Cella 2,2</td>
+                            <td>Cella 2,3</td>
+                        </tr>
+                        <tr>
+                            <td>Cella 3,1</td>
+                        </tr>
+                    </table>
+                </div><div class="sorgente"><p>                        &lt;table border=&quot;1&quot;&gt;
+                        &lt;tr&gt;
+                        &lt;th&gt;Intestazione 1&lt;/th&gt;
+                        &lt;th&gt;Intestazione 2&lt;/th&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                        &lt;td&gt;Cella 1,1&lt;/td&gt;
+                        &lt;td&gt;Cella 1,2&lt;/td&gt;
+                        &lt;td&gt;Cella 1,3&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                        &lt;td&gt;Cella 2,1&lt;/td&gt;
+                        &lt;td&gt;Cella 2,2&lt;/td&gt;
+                        &lt;td&gt;Cella 2,3&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                        &lt;td&gt;Cella 3,1&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;/table&gt;
+                </p></div></div></div>
+
+        <h2 class="sezione">Cell padding e spacing</h2>
+
+        <div class="esempi">
+
+            <div class="esempio"><div class="rendering">
+
+                    <table border="1" cellpadding="10">
+                        <caption>cellpadding=10</caption>
+                        <tr>
+                            <td>Cella 1,1</td>
+                            <td>Cella 1,2</td>
+                            <td>Cella 1,3</td>
+                        </tr>
+                        <tr>
+                            <td>Cella 2,1</td>
+                            <td>Cella 2,2</td>
+                            <td>Cella 2,3</td>
+                        </tr>
+                        <tr>
+                            <td>Cella 3,1</td>
+                            <td>Cella 3,2</td>
+                            <td>Cella 3,3</td>
+                        </tr>
+                    </table>
+                </div><div class="sorgente"><p>                        &lt;table border=&quot;1&quot; cellpadding=&quot;10&quot;&gt;
+                        &lt;caption&gt;cellpadding=10&lt;/caption&gt;
+                        &lt;tr&gt;
+                        &lt;td&gt;Cella 1,1&lt;/td&gt;
+                        &lt;td&gt;Cella 1,2&lt;/td&gt;
+                        &lt;td&gt;Cella 1,3&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                        &lt;td&gt;Cella 2,1&lt;/td&gt;
+                        &lt;td&gt;Cella 2,2&lt;/td&gt;
+                        &lt;td&gt;Cella 2,3&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                        &lt;td&gt;Cella 3,1&lt;/td&gt;
+                        &lt;td&gt;Cella 3,2&lt;/td&gt;
+                        &lt;td&gt;Cella 3,3&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;/table&gt;
+                </p></div></div><div class="esempio"><div class="rendering">
+
+                    <table border="1" cellspacing="10">
+                        <caption>cellspacing=10</caption>
+                        <tr>
+                            <td>Cella 1,1</td>
+                            <td>Cella 1,2</td>
+                            <td>Cella 1,3</td>
+                        </tr>
+                        <tr>
+                            <td>Cella 2,1</td>
+                            <td>Cella 2,2</td>
+                            <td>Cella 2,3</td>
+                        </tr>
+                        <tr>
+                            <td>Cella 3,1</td>
+                            <td>Cella 3,2</td>
+                            <td>Cella 3,3</td>
+                        </tr>
+                    </table>
+                </div><div class="sorgente"><p>                        &lt;table border=&quot;1&quot; cellspacing=&quot;10&quot;&gt;
+                        &lt;caption&gt;cellspacing=10&lt;/caption&gt;
+                        &lt;tr&gt;
+                        &lt;td&gt;Cella 1,1&lt;/td&gt;
+                        &lt;td&gt;Cella 1,2&lt;/td&gt;
+                        &lt;td&gt;Cella 1,3&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                        &lt;td&gt;Cella 2,1&lt;/td&gt;
+                        &lt;td&gt;Cella 2,2&lt;/td&gt;
+                        &lt;td&gt;Cella 2,3&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                        &lt;td&gt;Cella 3,1&lt;/td&gt;
+                        &lt;td&gt;Cella 3,2&lt;/td&gt;
+                        &lt;td&gt;Cella 3,3&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;/table&gt;
+                </p></div></div></div>
+
+        <h2 class="sezione">Col e Row Span</h2>
+
+        <div class="esempi">
+
+            <div class="esempio"><div class="rendering">
+
+                    <table border="1">
+                        <tr>
+                            <td rowspan="3">Cella 1,1</td>
+                            <td colspan="2">Cella 1,2</td>
+                        </tr>
+                        <tr>
+                            <td>Cella 2,2</td>
+                            <td>Cella 2,3</td>
+                        </tr>
+                        <tr>
+                            <td>Cella 3,2</td>
+                            <td>Cella 3,3</td>
+                        </tr>
+                    </table>
+                </div><div class="sorgente"><p>                        &lt;table border=&quot;1&quot;&gt;
+                        &lt;tr&gt;
+                        &lt;td rowspan=&quot;3&quot;&gt;Cella 1,1&lt;/td&gt;
+                        &lt;td colspan=&quot;2&quot;&gt;Cella 1,2&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                        &lt;td&gt;Cella 2,2&lt;/td&gt;
+                        &lt;td&gt;Cella 2,3&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                        &lt;td&gt;Cella 3,2&lt;/td&gt;
+                        &lt;td&gt;Cella 3,3&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;/table&gt;
+                </p></div></div></div>
+
+        <h2 class="sezione">Frames e Rules</h2>
+
+        <div class="esempi">
+
+            <div class="esempio"><div class="rendering">
+
+                    <table border="1" frame="vsides" rules="cols">
+                        <caption>frame=visides, rules=cols</caption>
+                        <tr>
+                            <td>Cella 1,1</td>
+                            <td>Cella 1,2</td>
+                            <td>Cella 1,3</td>
+                        </tr>
+                        <tr>
+                            <td>Cella 2,1</td>
+                            <td>Cella 2,2</td>
+                            <td>Cella 2,3</td>
+                        </tr>
+                        <tr>
+                            <td>Cella 3,1</td>
+                            <td>Cella 3,2</td>
+                            <td>Cella 3,3</td>
+                        </tr>
+                    </table>
+                </div><div class="sorgente"><p>                        &lt;table border=&quot;1&quot; frame=&quot;vsides&quot; rules=&quot;cols&quot;&gt;
+                        &lt;caption&gt;frame=visides, rules=cols&lt;/caption&gt;
+                        &lt;tr&gt;
+                        &lt;td&gt;Cella 1,1&lt;/td&gt;
+                        &lt;td&gt;Cella 1,2&lt;/td&gt;
+                        &lt;td&gt;Cella 1,3&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                        &lt;td&gt;Cella 2,1&lt;/td&gt;
+                        &lt;td&gt;Cella 2,2&lt;/td&gt;
+                        &lt;td&gt;Cella 2,3&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                        &lt;td&gt;Cella 3,1&lt;/td&gt;
+                        &lt;td&gt;Cella 3,2&lt;/td&gt;
+                        &lt;td&gt;Cella 3,3&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;/table&gt;
+                </p></div></div><div class="esempio"><div class="rendering">
+                    <table border="1" frame="hsides" rules="rows">
+                        <caption>frame=hisides, rules=rows</caption>
+                        <tr>
+                            <td>Cella 1,1</td>
+                            <td>Cella 1,2</td>
+                            <td>Cella 1,3</td>
+                        </tr>
+                        <tr>
+                            <td>Cella 2,1</td>
+                            <td>Cella 2,2</td>
+                            <td>Cella 2,3</td>
+                        </tr>
+                        <tr>
+                            <td>Cella 3,1</td>
+                            <td>Cella 3,2</td>
+                            <td>Cella 3,3</td>
+                        </tr>
+                    </table>
+                </div><div class="sorgente"><p>                        &lt;table border=&quot;1&quot; frame=&quot;hsides&quot; rules=&quot;rows&quot;&gt;
+                        &lt;caption&gt;frame=hisides, rules=rows&lt;/caption&gt;
+                        &lt;tr&gt;
+                        &lt;td&gt;Cella 1,1&lt;/td&gt;
+                        &lt;td&gt;Cella 1,2&lt;/td&gt;
+                        &lt;td&gt;Cella 1,3&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                        &lt;td&gt;Cella 2,1&lt;/td&gt;
+                        &lt;td&gt;Cella 2,2&lt;/td&gt;
+                        &lt;td&gt;Cella 2,3&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                        &lt;td&gt;Cella 3,1&lt;/td&gt;
+                        &lt;td&gt;Cella 3,2&lt;/td&gt;
+                        &lt;td&gt;Cella 3,3&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;/table&gt;
+                </p></div></div><div class="esempio"><div class="rendering">
+                    <table border="1" frame="below" rules="none">
+                        <caption>frame=below, rules=none</caption>
+                        <tr>
+                            <td>Cella 1,1</td>
+                            <td>Cella 1,2</td>
+                            <td>Cella 1,3</td>
+                        </tr>
+                        <tr>
+                            <td>Cella 2,1</td>
+                            <td>Cella 2,2</td>
+                            <td>Cella 2,3</td>
+                        </tr>
+                        <tr>
+                            <td>Cella 3,1</td>
+                            <td>Cella 3,2</td>
+                            <td>Cella 3,3</td>
+                        </tr>
+                    </table>
+                </div><div class="sorgente"><p>                        &lt;table border=&quot;1&quot; frame=&quot;below&quot; rules=&quot;none&quot;&gt;
+                        &lt;caption&gt;frame=below, rules=none&lt;/caption&gt;
+                        &lt;tr&gt;
+                        &lt;td&gt;Cella 1,1&lt;/td&gt;
+                        &lt;td&gt;Cella 1,2&lt;/td&gt;
+                        &lt;td&gt;Cella 1,3&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                        &lt;td&gt;Cella 2,1&lt;/td&gt;
+                        &lt;td&gt;Cella 2,2&lt;/td&gt;
+                        &lt;td&gt;Cella 2,3&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                        &lt;td&gt;Cella 3,1&lt;/td&gt;
+                        &lt;td&gt;Cella 3,2&lt;/td&gt;
+                        &lt;td&gt;Cella 3,3&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;/table&gt;
+                </p></div></div></div>
+
+        <h2 class="sezione">Header, Footer e Body</h2>
+
+        <div class="esempi">
+
+            <div class="esempio"><div class="rendering">
+
+                    <table border="1">
+                        <caption>Tabella con thead</caption>
+                        <thead>
+                            <tr>
+                                <th>Intestazione1</th>
+                                <th>Intestazione2</th>
+                                <th>Intestazione3</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Cella 1,1</td>
+                                <td>Cella 1,2</td>
+                                <td>Cella 1,3</td>
+                            </tr>
+                            <tr>
+                                <td>Cella 2,1</td>
+                                <td>Cella 2,2</td>
+                                <td>Cella 2,3</td>
+                            </tr>
+                            <tr>
+                                <td>Cella 3,1</td>
+                                <td>Cella 3,2</td>
+                                <td>Cella 3,3</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div><div class="sorgente"><p>                        &lt;table border=&quot;1&quot;&gt;
+                        &lt;caption&gt;Tabella con thead&lt;/caption&gt;
+                        &lt;thead&gt;
+                        &lt;tr&gt;
+                        &lt;th&gt;Intestazione1&lt;/th&gt;
+                        &lt;th&gt;Intestazione2&lt;/th&gt;
+                        &lt;th&gt;Intestazione3&lt;/th&gt;
+                        &lt;/tr&gt;
+                        &lt;/thead&gt;
+                        &lt;tbody&gt;
+                        &lt;tr&gt;
+                        &lt;td&gt;Cella 1,1&lt;/td&gt;
+                        &lt;td&gt;Cella 1,2&lt;/td&gt;
+                        &lt;td&gt;Cella 1,3&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                        &lt;td&gt;Cella 2,1&lt;/td&gt;
+                        &lt;td&gt;Cella 2,2&lt;/td&gt;
+                        &lt;td&gt;Cella 2,3&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                        &lt;td&gt;Cella 3,1&lt;/td&gt;
+                        &lt;td&gt;Cella 3,2&lt;/td&gt;
+                        &lt;td&gt;Cella 3,3&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;/tbody&gt;
+                        &lt;/table&gt;
+                </p></div></div><div class="esempio"><div class="rendering">
+                    <table border="1">
+                        <caption>Tabella con thead e tfoot</caption>
+                        <thead>
+                            <tr>
+                                <th>Intestazione1</th>
+                                <th>Intestazione2</th>
+                                <th>Intestazione3</th>
+                            </tr>
+                        </thead>
+                        <tfoot>
+                            <tr>
+                                <td>Chiusura1</td>
+                                <td>Chiusura2</td>
+                                <td>Chiusura3</td>
+                            </tr>
+                        </tfoot>
+                        <tbody>
+                            <tr>
+                                <td>Cella 1,1</td>
+                                <td>Cella 1,2</td>
+                                <td>Cella 1,3</td>
+                            </tr>
+                            <tr>
+                                <td>Cella 2,1</td>
+                                <td>Cella 2,2</td>
+                                <td>Cella 2,3</td>
+                            </tr>
+                            <tr>
+                                <td>Cella 3,1</td>
+                                <td>Cella 3,2</td>
+                                <td>Cella 3,3</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div><div class="sorgente"><p>                        &lt;table border=&quot;1&quot;&gt;
+                        &lt;caption&gt;Tabella con thead e tfoot&lt;/caption&gt;
+                        &lt;thead&gt;
+                        &lt;tr&gt;
+                        &lt;th&gt;Intestazione1&lt;/th&gt;
+                        &lt;th&gt;Intestazione2&lt;/th&gt;
+                        &lt;th&gt;Intestazione3&lt;/th&gt;
+                        &lt;/tr&gt;
+                        &lt;/thead&gt;
+                        &lt;tfoot&gt;
+                        &lt;tr&gt;
+                        &lt;td&gt;Chiusura1&lt;/td&gt;
+                        &lt;td&gt;Chiusura2&lt;/td&gt;
+                        &lt;td&gt;Chiusura3&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;/tfoot&gt;
+                        &lt;tbody&gt;
+                        &lt;tr&gt;
+                        &lt;td&gt;Cella 1,1&lt;/td&gt;
+                        &lt;td&gt;Cella 1,2&lt;/td&gt;
+                        &lt;td&gt;Cella 1,3&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                        &lt;td&gt;Cella 2,1&lt;/td&gt;
+                        &lt;td&gt;Cella 2,2&lt;/td&gt;
+                        &lt;td&gt;Cella 2,3&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                        &lt;td&gt;Cella 3,1&lt;/td&gt;
+                        &lt;td&gt;Cella 3,2&lt;/td&gt;
+                        &lt;td&gt;Cella 3,3&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;/tbody&gt;
+                        &lt;/table&gt;
+                </p></div></div></div>
+
+        <h2 class="sezione">Carattersitiche delle colonne</h2>
+
+        <div class="esempi">
+
+            <div class="esempio"><div class="rendering">
+
+                    <table border="1">
+                        <caption>Tabella con colonne predefinite (allineamento e ampiezza)</caption>
+                        <col align="left" width="50pt" valign="top" />
+                        <col align="center" width="100pt" />
+                        <col align="right" width="70pt" valign="bottom" />
+                        <tbody>
+                            <tr>
+                                <td>Cella 1,1</td>
+                                <td>Cella 1,2</td>
+                                <td>Cella 1,3</td>
+                            </tr>
+                            <tr>
+                                <td>Cella 2,1</td>
+                                <td>Cella 2,2</td>
+                                <td>Cella 2,3</td>
+                            </tr>
+                            <tr>
+                                <td>Cella 3,1</td>
+                                <td>Cella 3,2</td>
+                                <td>Cella 3,3</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div><div class="sorgente"><p>                        &lt;table border=&quot;1&quot;&gt;
+                        &lt;caption&gt;Tabella con colonne predefinite (allineamento e ampiezza)&lt;/caption&gt;
+                        &lt;col align=&quot;left&quot; width=&quot;50pt&quot; valign=&quot;top&quot; /&gt;
+                        &lt;col align=&quot;center&quot; width=&quot;100pt&quot; /&gt;
+                        &lt;col align=&quot;right&quot; width=&quot;70pt&quot; valign=&quot;bottom&quot; /&gt;
+                        &lt;tbody&gt;
+                        &lt;tr&gt;
+                        &lt;td&gt;Cella 1,1&lt;/td&gt;
+                        &lt;td&gt;Cella 1,2&lt;/td&gt;
+                        &lt;td&gt;Cella 1,3&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                        &lt;td&gt;Cella 2,1&lt;/td&gt;
+                        &lt;td&gt;Cella 2,2&lt;/td&gt;
+                        &lt;td&gt;Cella 2,3&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                        &lt;td&gt;Cella 3,1&lt;/td&gt;
+                        &lt;td&gt;Cella 3,2&lt;/td&gt;
+                        &lt;td&gt;Cella 3,3&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;/tbody&gt;
+                        &lt;/table&gt;
+                </p></div></div><div class="esempio"><div class="rendering">
+                    <table border="1">
+                        <caption>Tabella con colonne predefinite (definizione multipla con span)</caption>
+                        <col align="left" width="50pt" valign="top" />
+                        <col align="center" width="100pt" span="2" />
+                        <tbody>
+                            <tr>
+                                <td>Cella 1,1</td>
+                                <td>Cella 1,2</td>
+                                <td>Cella 1,3</td>
+                            </tr>
+                            <tr>
+                                <td>Cella 2,1</td>
+                                <td>Cella 2,2</td>
+                                <td>Cella 2,3</td>
+                            </tr>
+                            <tr>
+                                <td>Cella 3,1</td>
+                                <td>Cella 3,2</td>
+                                <td>Cella 3,3</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div><div class="sorgente"><p>                        &lt;table border=&quot;1&quot;&gt;
+                        &lt;caption&gt;Tabella con colonne predefinite (definizione multipla con span)&lt;/caption&gt;
+                        &lt;col align=&quot;left&quot; width=&quot;50pt&quot; valign=&quot;top&quot; /&gt;
+                        &lt;col align=&quot;center&quot; width=&quot;100pt&quot; span=&quot;2&quot; /&gt;
+                        &lt;tbody&gt;
+                        &lt;tr&gt;
+                        &lt;td&gt;Cella 1,1&lt;/td&gt;
+                        &lt;td&gt;Cella 1,2&lt;/td&gt;
+                        &lt;td&gt;Cella 1,3&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                        &lt;td&gt;Cella 2,1&lt;/td&gt;
+                        &lt;td&gt;Cella 2,2&lt;/td&gt;
+                        &lt;td&gt;Cella 2,3&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                        &lt;td&gt;Cella 3,1&lt;/td&gt;
+                        &lt;td&gt;Cella 3,2&lt;/td&gt;
+                        &lt;td&gt;Cella 3,3&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;/tbody&gt;
+                        &lt;/table&gt;
+                </p></div></div><div class="esempio"><div class="rendering">
+                    <table border="1">
+                        <caption>Tabella con colonne predefinite (colonna omessa)</caption>
+                        <col align="left" width="50pt" valign="top" />
+                        <col align="center" width="100pt" />
+                        <tbody>
+                            <tr>
+                                <td>Cella 1,1</td>
+                                <td>Cella 1,2</td>
+                                <td>Cella 1,3</td>
+                            </tr>
+                            <tr>
+                                <td>Cella 2,1</td>
+                                <td>Cella 2,2</td>
+                                <td>Cella 2,3</td>
+                            </tr>
+                            <tr>
+                                <td>Cella 3,1</td>
+                                <td>Cella 3,2</td>
+                                <td>Cella 3,3</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div><div class="sorgente"><p>                        &lt;table border=&quot;1&quot;&gt;
+                        &lt;caption&gt;Tabella con colonne predefinite (colonna omessa)&lt;/caption&gt;
+                        &lt;col align=&quot;left&quot; width=&quot;50pt&quot; valign=&quot;top&quot; /&gt;
+                        &lt;col align=&quot;center&quot; width=&quot;100pt&quot; /&gt;
+                        &lt;tbody&gt;
+                        &lt;tr&gt;
+                        &lt;td&gt;Cella 1,1&lt;/td&gt;
+                        &lt;td&gt;Cella 1,2&lt;/td&gt;
+                        &lt;td&gt;Cella 1,3&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                        &lt;td&gt;Cella 2,1&lt;/td&gt;
+                        &lt;td&gt;Cella 2,2&lt;/td&gt;
+                        &lt;td&gt;Cella 2,3&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                        &lt;td&gt;Cella 3,1&lt;/td&gt;
+                        &lt;td&gt;Cella 3,2&lt;/td&gt;
+                        &lt;td&gt;Cella 3,3&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;/tbody&gt;
+                        &lt;/table&gt;
+                </p></div></div></div>
+
+        <h2 class="sezione">Gruppi di colonne</h2>
+
+        <div class="esempi">
+
+            <div class="esempio"><div class="rendering">
+
+                    <table border="1">
+                        <caption>Tabella con due gruppi di colonne</caption>
+                        <colgroup align="right" width="150pt" valign="bottom" span="2" />
+                        <colgroup align="left" width="270pt" valign="top" />
+                        <tbody>
+                            <tr>
+                                <td>Cella 1,1</td>
+                                <td>Cella 1,2</td>
+                                <td>Cella 1,3</td>
+                            </tr>
+                            <tr>
+                                <td>Cella 2,1</td>
+                                <td>Cella 2,2</td>
+                                <td>Cella 2,3</td>
+                            </tr>
+                            <tr>
+                                <td>Cella 3,1</td>
+                                <td>Cella 3,2</td>
+                                <td>Cella 3,3</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div><div class="sorgente"><p>                        &lt;table border=&quot;1&quot;&gt;
+                        &lt;caption&gt;Tabella con due gruppi di colonne&lt;/caption&gt;
+                        &lt;colgroup align=&quot;right&quot; width=&quot;150pt&quot; valign=&quot;bottom&quot; span=&quot;2&quot; /&gt;
+                        &lt;colgroup align=&quot;left&quot; width=&quot;270pt&quot; valign=&quot;top&quot; /&gt;
+                        &lt;tbody&gt;
+                        &lt;tr&gt;
+                        &lt;td&gt;Cella 1,1&lt;/td&gt;
+                        &lt;td&gt;Cella 1,2&lt;/td&gt;
+                        &lt;td&gt;Cella 1,3&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                        &lt;td&gt;Cella 2,1&lt;/td&gt;
+                        &lt;td&gt;Cella 2,2&lt;/td&gt;
+                        &lt;td&gt;Cella 2,3&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                        &lt;td&gt;Cella 3,1&lt;/td&gt;
+                        &lt;td&gt;Cella 3,2&lt;/td&gt;
+                        &lt;td&gt;Cella 3,3&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;/tbody&gt;
+                        &lt;/table&gt;
+                </p></div></div><div class="esempio"><div class="rendering">
+                    <table border="1" rules="groups">
+                        <caption>Tabella con due gruppi di colonne, rules=groups</caption>
+                        <colgroup align="right" width="150pt" valign="bottom" span="2" />
+                        <colgroup align="left" width="270pt" valign="top" />
+                        <tbody>
+                            <tr>
+                                <td>Cella 1,1</td>
+                                <td>Cella 1,2</td>
+                                <td>Cella 1,3</td>
+                            </tr>
+                            <tr>
+                                <td>Cella 2,1</td>
+                                <td>Cella 2,2</td>
+                                <td>Cella 2,3</td>
+                            </tr>
+                            <tr>
+                                <td>Cella 3,1</td>
+                                <td>Cella 3,2</td>
+                                <td>Cella 3,3</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div><div class="sorgente"><p>                        &lt;table border=&quot;1&quot; rules=&quot;groups&quot;&gt;
+                        &lt;caption&gt;Tabella con due gruppi di colonne, rules=groups&lt;/caption&gt;
+                        &lt;colgroup align=&quot;right&quot; width=&quot;150pt&quot; valign=&quot;bottom&quot; span=&quot;2&quot; /&gt;
+                        &lt;colgroup align=&quot;left&quot; width=&quot;270pt&quot; valign=&quot;top&quot; /&gt;
+                        &lt;tbody&gt;
+                        &lt;tr&gt;
+                        &lt;td&gt;Cella 1,1&lt;/td&gt;
+                        &lt;td&gt;Cella 1,2&lt;/td&gt;
+                        &lt;td&gt;Cella 1,3&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                        &lt;td&gt;Cella 2,1&lt;/td&gt;
+                        &lt;td&gt;Cella 2,2&lt;/td&gt;
+                        &lt;td&gt;Cella 2,3&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                        &lt;td&gt;Cella 3,1&lt;/td&gt;
+                        &lt;td&gt;Cella 3,2&lt;/td&gt;
+                        &lt;td&gt;Cella 3,3&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;/tbody&gt;
+                        &lt;/table&gt;
+                </p></div></div><div class="esempio"><div class="rendering">
+                    <table border="1">
+                        <caption>Tabella con due gruppi di colonne, ciascuna definita separatemente</caption>
+                        <colgroup align="right" width="150pt" valign="bottom">
+                            <col align="left" width="50pt" valign="top" />
+                            <col align="center" width="100pt" />
+                        </colgroup>
+                        <colgroup align="left" width="270pt" valign="top" />
+                        <tbody>
+                            <tr>
+                                <td>Cella 1,1</td>
+                                <td>Cella 1,2</td>
+                                <td>Cella 1,3</td>
+                            </tr>
+                            <tr>
+                                <td>Cella 2,1</td>
+                                <td>Cella 2,2</td>
+                                <td>Cella 2,3</td>
+                            </tr>
+                            <tr>
+                                <td>Cella 3,1</td>
+                                <td>Cella 3,2</td>
+                                <td>Cella 3,3</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div><div class="sorgente"><p>                        &lt;table border=&quot;1&quot;&gt;
+                        &lt;caption&gt;Tabella con due gruppi di colonne, ciascuna definita separatemente&lt;/caption&gt;
+                        &lt;colgroup align=&quot;right&quot; width=&quot;150pt&quot; valign=&quot;bottom&quot;&gt;
+                        &lt;col align=&quot;left&quot; width=&quot;50pt&quot; valign=&quot;top&quot; /&gt;
+                        &lt;col align=&quot;center&quot; width=&quot;100pt&quot; /&gt;
+                        &lt;/colgroup&gt;
+                        &lt;colgroup align=&quot;left&quot; width=&quot;270pt&quot; valign=&quot;top&quot; /&gt;
+                        &lt;tbody&gt;
+                        &lt;tr&gt;
+                        &lt;td&gt;Cella 1,1&lt;/td&gt;
+                        &lt;td&gt;Cella 1,2&lt;/td&gt;
+                        &lt;td&gt;Cella 1,3&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                        &lt;td&gt;Cella 2,1&lt;/td&gt;
+                        &lt;td&gt;Cella 2,2&lt;/td&gt;
+                        &lt;td&gt;Cella 2,3&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                        &lt;td&gt;Cella 3,1&lt;/td&gt;
+                        &lt;td&gt;Cella 3,2&lt;/td&gt;
+                        &lt;td&gt;Cella 3,3&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;/tbody&gt;
+                        &lt;/table&gt;
+                </p></div></div></div>
+    </body>
+</html>
