@@ -1,56 +1,70 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
     <head>
-        <title>Novit&agrave; in HTML5</title>	
-        <link rel="stylesheet" href="iw_examples.css"/>
-        <meta charset="utf-8"/>
-
+        <title>Novit&agrave; in HTML5</title>
+        <link rel="stylesheet" href="iw_examples.css" />
+        <meta charset="utf-8" />
     </head>
     <body>
-
         <h1 class="sezione">Novit&agrave; in HTML5</h1>
+
+        <p>Gli esempi che seguono mostrano un riassunto dei nuovi elementi e attributi introdotti da HTML5.</p>
 
         <h2 class="sezione">Elementi e attributi cambiati</h2>
 
         <div class="esempi">
-
-            <div class="esempio"><div class="rendering">
-                    &lt;i&gt;:<i> Esempio di testo.</i>
-                </div><div class="sorgente"><p>&amp;lt;i&amp;gt;:&lt;i&gt; Esempio di testo.&lt;/i&gt;</p></div></div>
-            <div class="esempio"><div class="rendering">
-                    &lt;b&gt;:<b> Esempio di testo.</b>
-                </div><div class="sorgente"><p>&amp;lt;b&amp;gt;:&lt;b&gt; Esempio di testo.&lt;/b&gt;</p></div></div>
-            <div class="esempio"><div class="rendering">
-                    &lt;small&gt;:<small> Esempio di testo.</small>
-                </div><div class="sorgente"><p>&amp;lt;small&amp;gt;:&lt;small&gt; Esempio di testo.&lt;/small&gt;</p></div></div>
-            <div class="esempio"><div class="rendering">
+            <div class="esempio">
+                <div class="rendering">&lt;i&gt;:<i> Esempio di testo.</i></div>
+                <div class="sorgente"><p>&amp;lt;i&amp;gt;:&lt;i&gt; Esempio di testo.&lt;/i&gt;</p></div>
+            </div>
+            <div class="esempio">
+                <div class="rendering">&lt;b&gt;:<b> Esempio di testo.</b></div>
+                <div class="sorgente"><p>&amp;lt;b&amp;gt;:&lt;b&gt; Esempio di testo.&lt;/b&gt;</p></div>
+            </div>
+            <div class="esempio">
+                <div class="rendering">&lt;small&gt;:<small> Esempio di testo.</small></div>
+                <div class="sorgente"><p>&amp;lt;small&amp;gt;:&lt;small&gt; Esempio di testo.&lt;/small&gt;</p></div>
+            </div>
+            <div class="esempio">
+                <div class="rendering">
                     <a id="pippo">Destinazione di link</a>
-                </div><div class="sorgente"><p>&lt;a id=&quot;pippo&quot;&gt;Destinazione di link&lt;/a&gt;</p></div></div>
+                </div>
+                <div class="sorgente"><p>&lt;a id=&quot;pippo&quot;&gt;Destinazione di link&lt;/a&gt;</p></div>
+            </div>
         </div>
         <h2 class="sezione">Nuovi attributi</h2>
         <div class="esempi">
-            <div class="esempio"><div class="rendering">
+            <div class="esempio">
+                <div class="rendering">
                     <div contenteditable="true">DIV con contenteditable="true"</div>
-                </div><div class="sorgente"><p>&lt;div contenteditable=&quot;true&quot;&gt;DIV con contenteditable=&quot;true&quot;&lt;/div&gt;</p></div></div>
-            <div class="esempio"><div class="rendering">
+                </div>
+                <div class="sorgente"><p>&lt;div contenteditable=&quot;true&quot;&gt;DIV con contenteditable=&quot;true&quot;&lt;/div&gt;</p></div>
+            </div>
+            <div class="esempio">
+                <div class="rendering">
                     <div spellcheck="true">DIV con spellcheck="true"</div>
-                </div><div class="sorgente"><p>&lt;div spellcheck=&quot;true&quot;&gt;DIV con spellcheck=&quot;true&quot;&lt;/div&gt;</p></div></div>
-            <div class="esempio"><div class="rendering">
+                </div>
+                <div class="sorgente"><p>&lt;div spellcheck=&quot;true&quot;&gt;DIV con spellcheck=&quot;true&quot;&lt;/div&gt;</p></div>
+            </div>
+            <div class="esempio">
+                <div class="rendering">
                     <div translate="yes">DIV con translate="yes"</div>
-                </div><div class="sorgente"><p>&lt;div translate=&quot;yes&quot;&gt;DIV con translate=&quot;yes&quot;&lt;/div&gt;</p></div></div>
-            <div class="esempio"><div class="rendering">
+                </div>
+                <div class="sorgente"><p>&lt;div translate=&quot;yes&quot;&gt;DIV con translate=&quot;yes&quot;&lt;/div&gt;</p></div>
+            </div>
+            <div class="esempio">
+                <div class="rendering">
                     <div hidden="hidden">DIV con hidden="hidden"</div>
-                </div><div class="sorgente"><p>&lt;div hidden=&quot;hidden&quot;&gt;DIV con hidden=&quot;hidden&quot;&lt;/div&gt;</p></div></div>
+                </div>
+                <div class="sorgente"><p>&lt;div hidden=&quot;hidden&quot;&gt;DIV con hidden=&quot;hidden&quot;&lt;/div&gt;</p></div>
+            </div>
         </div>
-
-
-
 
         <h2 class="sezione">Nuovi elementi di sezionamento</h2>
 
         <div class="esempi">
-
-            <div class="esempio"><div class="rendering">			
+            <div class="esempio">
+                <div class="rendering">
                     <main>
                         Contenuto principale del documento
                         <nav>Navigazione: salta all'articolo... 1.1, 1.2, 2.1</nav>
@@ -62,7 +76,7 @@
                             <article>
                                 <h2>Articolo 1.1</h2>
                                 <p>bla, bla</p>
-                            </article>			
+                            </article>
                             <article>
                                 <h2>Articolo 1.2</h2>
                                 <p>bla, bla</p>
@@ -71,20 +85,19 @@
                                     <figcaption>Figura 1</figcaption>
                                 </figure>
                             </article>
-
                         </section>
 
-                        <section>			
-                            <h1>Sezione 2</h1>	
+                        <section>
+                            <h1>Sezione 2</h1>
 
                             <article>
                                 <h2>Articolo 2.1</h2>
                                 <p>bla, bla</p>
                             </article>
-                        </section>			
+                        </section>
                     </main>
-
-                </div><div class="sorgente">
+                </div>
+                <div class="sorgente">
                     <p>&lt;main&gt;</p>
                     <p>Contenuto principale del documento</p>
                     <p>&lt;nav&gt;Navigazione: salta all'articolo... 1.1, 1.2, 2.1&lt;/nav&gt;</p>
@@ -96,7 +109,7 @@
                     <p>&lt;article&gt;</p>
                     <p>&lt;h2&gt;Articolo 1.1&lt;/h2&gt;</p>
                     <p>&lt;p&gt;bla, bla&lt;/p&gt;</p>
-                    <p>&lt;/article&gt;</p>			
+                    <p>&lt;/article&gt;</p>
                     <p>&lt;article&gt;</p>
                     <p>&lt;h2&gt;Articolo 1.2&lt;/h2&gt;</p>
                     <p>&lt;p&gt;bla, bla&lt;/p&gt;</p>
@@ -108,66 +121,92 @@
 
                     <p>&lt;/section&gt;</p>
 
-                    <p>&lt;section&gt;		</p>	
-                    <p>&lt;h1&gt;Sezione 2&lt;/h1&gt;	</p>
+                    <p>&lt;section&gt;</p>
+                    <p>&lt;h1&gt;Sezione 2&lt;/h1&gt;</p>
 
                     <p>&lt;article&gt;</p>
                     <p>&lt;h2&gt;Articolo 2.1&lt;/h2&gt;</p>
                     <p>&lt;p&gt;bla, bla&lt;/p&gt;</p>
                     <p>&lt;/article&gt;</p>
-                    <p>&lt;/section&gt;	</p>		
+                    <p>&lt;/section&gt;</p>
                     <p>&lt;/main&gt;</p>
-
-                </div></div>		
+                </div>
+            </div>
         </div>
-
 
         <h2 class="sezione">Nuove Tipologie di input</h2>
 
         <form method="get" action="pluto.php">
             <div class="esempi">
-
-                <div class="esempio"><div class="rendering">
-                        Input (con autocomplete): <input type="text" name="i0" value="valore" autocomplete="on"/>
-                    </div><div class="sorgente"><p>&lt;input type=&quot;text&quot; name=&quot;i0&quot; value=&quot;valore&quot; autocomplete=&quot;on&quot;/&gt;</p></div></div><div class="esempio"><div class="rendering">
-                        Input (con pattern): <input type="text" name="i1" value="IDabc" pattern="ID[a-z]+"/>
-                    </div><div class="sorgente"><p>&lt;input type=&quot;text&quot; name=&quot;i1&quot; value=&quot;IDabc&quot; pattern=&quot;ID[a-z]+&quot;/&gt;</p></div></div><div class="esempio"><div class="rendering">
-                        Input (con placeholder): <input type="text" name="i2" placeholder="Inserire qualcosa..."/>
-                    </div><div class="sorgente"><p>&lt;input type=&quot;text&quot; name=&quot;i2&quot; placeholder=&quot;Inserire qualcosa...&quot;/&gt;</p></div></div><div class="esempio"><div class="rendering">
-                        Input (required): <input type="text" value="qualcosa" name="i3" required="required"/>
-                    </div><div class="sorgente"><p>&lt;input type=&quot;text&quot; value=&quot;qualcosa&quot; name=&quot;i3&quot; required=&quot;required&quot;/&gt;</p></div></div><div class="esempio"><div class="rendering">
-
-
-                        Input (type=tel): <input type="tel" name="i4" value="333444" />
-                    </div><div class="sorgente"><p>&lt;input type=&quot;tel&quot; name=&quot;i4&quot; value=&quot;333444&quot; /&gt;</p></div></div><div class="esempio"><div class="rendering">
-                        Input (type=search): <input type="search" name="i5" value="valore" />
-                    </div><div class="sorgente"><p>&lt;input type=&quot;search&quot; name=&quot;i5&quot; value=&quot;valore&quot; /&gt;</p></div></div><div class="esempio"><div class="rendering">
-                        Input (type=url): <input type="url" name="i6" value="http://pippo.it/pluto" />
-                    </div><div class="sorgente"><p>&lt;input type=&quot;url&quot; name=&quot;i6&quot; value=&quot;http://pippo.it/pluto&quot; /&gt;</p></div></div><div class="esempio"><div class="rendering">
-                        Input (type=email): <input type="email" name="i7" value="gdp@pippo.net" />
-                    </div><div class="sorgente"><p>&lt;input type=&quot;email&quot; name=&quot;i7&quot; value=&quot;gdp@pippo.net&quot; /&gt;</p></div></div><div class="esempio"><div class="rendering">
-                        Input (type=number, con min, max e step): <input type="number" name="i8" value="4" min="2" max="8" step="2"/>
-                    </div><div class="sorgente"><p>&lt;input type=&quot;number&quot; name=&quot;i8&quot; value=&quot;4&quot; min=&quot;2&quot; max=&quot;8&quot; step=&quot;2&quot;/&gt;</p></div></div><div class="esempio"><div class="rendering">
-                        Input (type=range, con min, max e step): <input type="range" name="i9" value="4" min="2" max="8" step="2"  />
-                    </div><div class="sorgente"><p>&lt;input type=&quot;range&quot; name=&quot;i9&quot; value=&quot;4&quot; min=&quot;2&quot; max=&quot;8&quot; step=&quot;2&quot;  /&gt;</p></div></div><div class="esempio"><div class="rendering">
-                        Input (type=color): <input type="color" name="i10" value="#555555" />
-                    </div><div class="sorgente"><p>&lt;input type=&quot;color&quot; name=&quot;i10&quot; value=&quot;#555555&quot; /&gt;</p></div></div><div class="esempio"><div class="rendering">
-                        Input (type=date, con min e max): <input type="date" name="i11" min="2015-01-01" max="2020-12-31" />
-                    </div><div class="sorgente"><p>&lt;input type=&quot;date&quot; name=&quot;i11&quot; min=&quot;2015-01-01&quot; max=&quot;2020-12-31&quot; /&gt;</p></div></div><div class="esempio"><div class="rendering">
-                        Input (type=time): <input type="time" name="i12"/>
-                    </div><div class="sorgente"><p>&lt;input type=&quot;time&quot; name=&quot;i12&quot;/&gt;</p></div></div><div class="esempio"><div class="rendering">
-
-                        Input (type=email, multiplo): <input type="email" name="i13" value="gdp@pippo.com, gdp1@pluto.it" multiple="multiple" />
-                    </div><div class="sorgente"><p>&lt;input type=&quot;email&quot; name=&quot;i13&quot; value=&quot;gdp@pippo.com, gdp1@pluto.it&quot; multiple=&quot;multiple&quot; /&gt;</p></div></div><div class="esempio"><div class="rendering">
-
-                        Input (type=file, multiplo): <input type="file" name="i14" multiple="multiple" />
-                    </div><div class="sorgente"><p>&lt;input type=&quot;file&quot; name=&quot;i14&quot; multiple=&quot;multiple&quot; /&gt;</p></div></div><div class="esempio"><div class="rendering">
-
-                        Input (type=submit con formcation e formnovalidate): <input type="submit" name="i15" value="submit SENZA validazione" formaction="pippo.php" formnovalidate="formnovalidate" />
-                    </div><div class="sorgente"><p>&lt;input type=&quot;submit&quot; name=&quot;i15&quot; value=&quot;submit SENZA validazione&quot; formaction=&quot;pippo.php&quot; formnovalidate=&quot;formnovalidate&quot; /&gt;</p></div></div><div class="esempio"><div class="rendering">
-
-                        Input (type=submit): <input type="submit" name="i16" value="submit CON validazione" />
-                    </div><div class="sorgente"><p> &lt;input type=&quot;submit&quot; name=&quot;i16&quot; value=&quot;submit CON validazione&quot; /&gt;                     </p></div></div></div>				
+                <div class="esempio">
+                    <div class="rendering">Input (con autocomplete): <input type="text" name="i0" value="valore" autocomplete="on" /></div>
+                    <div class="sorgente"><p>&lt;input type=&quot;text&quot; name=&quot;i0&quot; value=&quot;valore&quot; autocomplete=&quot;on&quot;/&gt;</p></div>
+                </div>
+                <div class="esempio">
+                    <div class="rendering">Input (con pattern): <input type="text" name="i1" value="IDabc" pattern="ID[a-z]+" /></div>
+                    <div class="sorgente"><p>&lt;input type=&quot;text&quot; name=&quot;i1&quot; value=&quot;IDabc&quot; pattern=&quot;ID[a-z]+&quot;/&gt;</p></div>
+                </div>
+                <div class="esempio">
+                    <div class="rendering">Input (con placeholder): <input type="text" name="i2" placeholder="Inserire qualcosa..." /></div>
+                    <div class="sorgente"><p>&lt;input type=&quot;text&quot; name=&quot;i2&quot; placeholder=&quot;Inserire qualcosa...&quot;/&gt;</p></div>
+                </div>
+                <div class="esempio">
+                    <div class="rendering">Input (required): <input type="text" value="qualcosa" name="i3" required="required" /></div>
+                    <div class="sorgente"><p>&lt;input type=&quot;text&quot; value=&quot;qualcosa&quot; name=&quot;i3&quot; required=&quot;required&quot;/&gt;</p></div>
+                </div>
+                <div class="esempio">
+                    <div class="rendering">Input (type=tel): <input type="tel" name="i4" value="333444" /></div>
+                    <div class="sorgente"><p>&lt;input type=&quot;tel&quot; name=&quot;i4&quot; value=&quot;333444&quot; /&gt;</p></div>
+                </div>
+                <div class="esempio">
+                    <div class="rendering">Input (type=search): <input type="search" name="i5" value="valore" /></div>
+                    <div class="sorgente"><p>&lt;input type=&quot;search&quot; name=&quot;i5&quot; value=&quot;valore&quot; /&gt;</p></div>
+                </div>
+                <div class="esempio">
+                    <div class="rendering">Input (type=url): <input type="url" name="i6" value="http://pippo.it/pluto" /></div>
+                    <div class="sorgente"><p>&lt;input type=&quot;url&quot; name=&quot;i6&quot; value=&quot;http://pippo.it/pluto&quot; /&gt;</p></div>
+                </div>
+                <div class="esempio">
+                    <div class="rendering">Input (type=email): <input type="email" name="i7" value="gdp@pippo.net" /></div>
+                    <div class="sorgente"><p>&lt;input type=&quot;email&quot; name=&quot;i7&quot; value=&quot;gdp@pippo.net&quot; /&gt;</p></div>
+                </div>
+                <div class="esempio">
+                    <div class="rendering">Input (type=number, con min, max e step): <input type="number" name="i8" value="4" min="2" max="8" step="2" /></div>
+                    <div class="sorgente"><p>&lt;input type=&quot;number&quot; name=&quot;i8&quot; value=&quot;4&quot; min=&quot;2&quot; max=&quot;8&quot; step=&quot;2&quot;/&gt;</p></div>
+                </div>
+                <div class="esempio">
+                    <div class="rendering">Input (type=range, con min, max e step): <input type="range" name="i9" value="4" min="2" max="8" step="2" /></div>
+                    <div class="sorgente"><p>&lt;input type=&quot;range&quot; name=&quot;i9&quot; value=&quot;4&quot; min=&quot;2&quot; max=&quot;8&quot; step=&quot;2&quot; /&gt;</p></div>
+                </div>
+                <div class="esempio">
+                    <div class="rendering">Input (type=color): <input type="color" name="i10" value="#555555" /></div>
+                    <div class="sorgente"><p>&lt;input type=&quot;color&quot; name=&quot;i10&quot; value=&quot;#555555&quot; /&gt;</p></div>
+                </div>
+                <div class="esempio">
+                    <div class="rendering">Input (type=date, con min e max): <input type="date" name="i11" min="2015-01-01" max="2020-12-31" /></div>
+                    <div class="sorgente"><p>&lt;input type=&quot;date&quot; name=&quot;i11&quot; min=&quot;2015-01-01&quot; max=&quot;2020-12-31&quot; /&gt;</p></div>
+                </div>
+                <div class="esempio">
+                    <div class="rendering">Input (type=time): <input type="time" name="i12" /></div>
+                    <div class="sorgente"><p>&lt;input type=&quot;time&quot; name=&quot;i12&quot;/&gt;</p></div>
+                </div>
+                <div class="esempio">
+                    <div class="rendering">Input (type=email, multiplo): <input type="email" name="i13" value="gdp@pippo.com, gdp1@pluto.it" multiple="multiple" /></div>
+                    <div class="sorgente"><p>&lt;input type=&quot;email&quot; name=&quot;i13&quot; value=&quot;gdp@pippo.com, gdp1@pluto.it&quot; multiple=&quot;multiple&quot; /&gt;</p></div>
+                </div>
+                <div class="esempio">
+                    <div class="rendering">Input (type=file, multiplo): <input type="file" name="i14" multiple="multiple" /></div>
+                    <div class="sorgente"><p>&lt;input type=&quot;file&quot; name=&quot;i14&quot; multiple=&quot;multiple&quot; /&gt;</p></div>
+                </div>
+                <div class="esempio">
+                    <div class="rendering">Input (type=submit con formcation e formnovalidate): <input type="submit" name="i15" value="submit SENZA validazione" formaction="pippo.php" formnovalidate="formnovalidate" /></div>
+                    <div class="sorgente"><p>&lt;input type=&quot;submit&quot; name=&quot;i15&quot; value=&quot;submit SENZA validazione&quot; formaction=&quot;pippo.php&quot; formnovalidate=&quot;formnovalidate&quot; /&gt;</p></div>
+                </div>
+                <div class="esempio">
+                    <div class="rendering">Input (type=submit): <input type="submit" name="i16" value="submit CON validazione" /></div>
+                    <div class="sorgente"><p>&lt;input type=&quot;submit&quot; name=&quot;i16&quot; value=&quot;submit CON validazione&quot; /&gt;</p></div>
+                </div>
+            </div>
         </form>
     </body>
 </html>

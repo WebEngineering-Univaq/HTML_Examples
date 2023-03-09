@@ -1,0 +1,39 @@
+<!doctype html>
+<html >
+    <head>
+        <title>Sezioni CDATA e script incorporati</title>	
+        <link rel="stylesheet" href="iw_examples.css" type="text/css"/>
+        <meta charset="utf-8"/>
+		
+	<script type="text/javascript">
+	//modo ERRATO se si usa la sintassi XML
+	function a() {
+		if (x>0 && y<9) alert("ciao");
+	}
+	</script>	
+	
+	<script type="text/javascript">
+	<![CDATA[
+	//modo ERRATO se si usa la sintassi HTML (come in questo caso)
+	function a() {
+		if (x>0 && y<9) alert("ciao");
+	}
+	]]>
+	</script>
+	
+	<script type="text/javascript">
+	//<![CDATA[
+	//modo compatibile
+	function a() {
+		if (x>0 && y<9) alert("ciao");
+	}
+	//]]>
+	</script>
+    </head>
+	
+	<body>
+		<h1>Sezioni CDATA e script incorporati</h1>
+		<p>Questa pagina html contiene due esempi di script importati in maniera scorretta (in base alla tipologia di HTML5 in uso), e uno importato con un "trucco" che lo rende maggiormente compatibile anche con i browser più datati.</p>		
+	</body>
+
+</html>

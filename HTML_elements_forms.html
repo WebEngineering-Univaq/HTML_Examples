@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Gli elementi di XHTML: i moduli</title>
+        <link rel="stylesheet" href="iw_examples.css" type="text/css" />
+        <meta charset="utf-8" />
+    </head>
+    <body>
+        <h1 class="sezione">Moduli</h1>
+
+        <p>Gli esempi che seguono mostrano l'uso e il rendering dei moduli in HTML.</p>
+
+        <form action="pippo.php" method="get" enctype="application/x-www-form-urlencoded">
+            <h2 class="sezione">Tipologie di input</h2>
+            <div class="esempi">
+                <div class="esempio">
+                    <div class="rendering">Input (type=button): <input type="button" name="i1" value="valore" /></div>
+                    <div class="sorgente"><p>&lt;input type=&quot;button&quot; name=&quot;i1&quot; value=&quot;valore&quot; /&gt;</p></div>
+                </div>
+                <div class="esempio">
+                    <div class="rendering">Input (type=text): <input type="text" name="i2" value="valore" /></div>
+                    <div class="sorgente"><p>&lt;input type=&quot;text&quot; name=&quot;i2&quot; value=&quot;valore&quot; /&gt;</p></div>
+                </div>
+                <div class="esempio">
+                    <div class="rendering">Input (type=checkbox): <input type="checkbox" name="i3" value="valore" checked="checked" /></div>
+                    <div class="sorgente"><p>&lt;input type=&quot;checkbox&quot; name=&quot;i3&quot; value=&quot;valore&quot; checked=&quot;checked&quot; /&gt;</p></div>
+                </div>
+                <div class="esempio">
+                    <div class="rendering">Input (type=file): <input type="file" name="i4" /></div>
+                    <div class="sorgente"><p>&lt;input type=&quot;file&quot; name=&quot;i4&quot; /&gt;</p></div>
+                </div>
+                <div class="esempio">
+                    <div class="rendering">Input (type=password): <input type="password" name="i5" value="valore" /></div>
+                    <div class="sorgente"><p>&lt;input type=&quot;password&quot; name=&quot;i5&quot; value=&quot;valore&quot; /&gt;</p></div>
+                </div>
+                <div class="esempio">
+                    <div class="rendering">Input (type=radio): <input type="radio" name="i6" value="valore" />
+                        <input type="radio" name="i6" value="valore2" checked="checked" />
+                    </div>
+                    <div class="sorgente"><p>&lt;input type=&quot;radio&quot; name=&quot;i6&quot; value=&quot;valore&quot; /&gt;</p><p>&lt;input type=&quot;>radio&quot; name=&quot;i6&quot; value=&quot;valore2&quot; checked=&quot;checked&quot; /&gt;</p>
+                    </div>
+                </div>
+                <div class="esempio">
+                    <div class="rendering">Input (type=reset): <input type="reset" name="i7" value="valore" /></div>
+                    <div class="sorgente"><p>&lt;input type=&quot;reset&quot; name=&quot;i7&quot; value=&quot;valore&quot; /&gt;</p></div>
+                </div>
+                <div class="esempio">
+                    <div class="rendering">Input (type=submit): <input type="submit" name="i8" value="valore" /></div>
+                    <div class="sorgente"><p>&lt;input type=&quot;submit&quot; name=&quot;i8&quot; value=&quot;valore&quot; /&gt;</p></div>
+                </div>
+                <div class="esempio">
+                    <div class="rendering">Input (type=image): <input type="image" name="i9" src="big_info_2.gif" /></div>
+                    <div class="sorgente"><p>&lt;input type=&quot;image&quot; name=&quot;i9&quot; src=&quot;big_info_2.gif&quot; /&gt;</p></div>
+                </div>
+            </div>
+
+            <h2 class="sezione">Campi disabilitati...</h2>
+            <div class="esempi">
+                <div class="esempio">
+                    <div class="rendering">Input (type=button): <input type="button" name="i1d" value="valore" disabled="disabled" /></div>
+                    <div class="sorgente"><p>&lt;input type=&quot;button&quot; name=&quot;i1d&quot; value=&quot;valore&quot; disabled=&quot;disabled&quot; /&gt;</p></div>
+                </div>
+                <div class="esempio">
+                    <div class="rendering">Input (type=text): <input type="text" name="i2d" value="valore" disabled="disabled" /></div>
+                    <div class="sorgente"><p>&lt;input type=&quot;text&quot; name=&quot;i2d&quot; value=&quot;valore&quot; disabled=&quot;disabled&quot; /&gt;</p></div>
+                </div>
+                <div class="esempio">
+                    <div class="rendering">Input (type=checkbox): <input type="checkbox" name="i3d" value="valore" checked="checked" disabled="disabled" /></div>
+                    <div class="sorgente"><p>&lt;input type=&quot;checkbox&quot; name=&quot;i3d&quot; value=&quot;valore&quot; checked=&quot;checked&quot; disabled=&quot;disabled&quot; /&gt;</p></div>
+                </div>
+                <div class="esempio">
+                    <div class="rendering">Input (type=file): <input type="file" name="i4d" disabled="disabled" /></div>
+                    <div class="sorgente"><p>&lt;input type=&quot;file&quot; name=&quot;i4d&quot; disabled=&quot;disabled&quot; /&gt;</p></div>
+                </div>
+                <div class="esempio">
+                    <div class="rendering">Input (type=password): <input type="password" name="i5d" value="valore" disabled="disabled" /></div>
+                    <div class="sorgente"><p>&lt;input type=&quot;password&quot; name=&quot;i5d&quot; value=&quot;valore&quot; disabled=&quot;disabled&quot; /&gt;</p></div>
+                </div>
+                <div class="esempio">
+                    <div class="rendering">
+                        Input (type=radio): <input type="radio" name="i6d" value="valore" disabled="disabled" />
+                        <input type="radio" name="i6d" value="valore2" checked="checked" disabled="disabled" />
+                    </div>
+                    <div class="sorgente">
+                        <p>&lt;input type=&quot;radio&quot; name=&quot;i6d&quot; value=&quot;valore&quot; disabled=&quot;disabled&quot;/&gt;</p><p>&lt;input type=&quot;radio&quot; name=&quot;i6d&quot; value=&quot;valore2&quot;
+                            checked=&quot;checked&quot; disabled=&quot;disabled&quot; /&gt;
+                        </p>
+                    </div>
+                </div>
+                <div class="esempio">
+                    <div class="rendering">Input (type=reset): <input type="reset" name="i7d" value="valore" disabled="disabled" /></div>
+                    <div class="sorgente"><p>&lt;input type=&quot;reset&quot; name=&quot;i7d&quot; value=&quot;valore&quot; disabled=&quot;disabled&quot; /&gt;</p></div>
+                </div>
+                <div class="esempio">
+                    <div class="rendering">Input (type=submit): <input type="submit" name="i8d" value="valore" disabled="disabled" /></div>
+                    <div class="sorgente"><p>&lt;input type=&quot;submit&quot; name=&quot;i8d&quot; value=&quot;valore&quot; disabled=&quot;disabled&quot; /&gt;</p></div>
+                </div>
+                <div class="esempio">
+                    <div class="rendering">Input (type=image): <input type="image" name="i9d" src="big_info_2.gif" disabled="disabled" /></div>
+                    <div class="sorgente"><p>&lt;input type=&quot;image&quot; name=&quot;i9d&quot; src=&quot;big_info_2.gif&quot; disabled=&quot;disabled&quot; /&gt;</p></div>
+                </div>
+            </div>
+
+            <h2 class="sezione">Campi readonly...</h2>
+            <div class="esempi">
+                <div class="esempio">
+                    <div class="rendering">Input (type=button): <input type="button" name="i1r" value="valore" readonly="readonly" /></div>
+                    <div class="sorgente"><p>&lt;input type=&quot;button&quot; name=&quot;i1r&quot; value=&quot;valore&quot; readonly=&quot;readonly&quot; /&gt;</p></div>
+                </div>
+                <div class="esempio">
+                    <div class="rendering">Input (type=text): <input type="text" name="i2r" value="valore" readonly="readonly" /></div>
+                    <div class="sorgente"><p>&lt;input type=&quot;text&quot; name=&quot;i2r&quot; value=&quot;valore&quot; readonly=&quot;readonly&quot; /&gt;</p></div>
+                </div>
+                <div class="esempio">
+                    <div class="rendering">Input (type=checkbox): <input type="checkbox" name="i3r" value="valore" checked="checked" readonly="readonly" /></div>
+                    <div class="sorgente"><p>&lt;input type=&quot;checkbox&quot; name=&quot;i3r&quot; value=&quot;valore&quot; checked=&quot;checked&quot; readonly=&quot;readonly&quot; /&gt;</p></div>
+                </div>
+                <div class="esempio">
+                    <div class="rendering">Input (type=file): <input type="file" name="i4r" readonly="readonly" /></div>
+                    <div class="sorgente"><p>&lt;input type=&quot;file&quot; name=&quot;i4r&quot; readonly=&quot;readonly&quot; /&gt;</p></div>
+                </div>
+                <div class="esempio">
+                    <div class="rendering">Input (type=password): <input type="password" name="i5r" value="valore" readonly="readonly" /></div>
+                    <div class="sorgente"><p>&lt;input type=&quot;password&quot; name=&quot;i5r&quot; value=&quot;valore&quot; readonly=&quot;readonly&quot; /&gt;</p></div>
+                </div>
+                <div class="esempio">
+                    <div class="rendering">
+                        Input (type=radio): <input type="radio" name="i6r" value="valore" readonly="readonly" />
+                        <input type="radio" name="i6r" value="valore2" checked="checked" readonly="readonly" />
+                    </div>
+                    <div class="sorgente">
+                        <p>&lt;input type=&quot;radio&quot; name=&quot;i6r&quot; value=&quot;valore&quot; readonly=&quot;readonly&quot;/&gt;</p><p>&lt;input type=&quot;radio&quot; name=&quot;i6r&quot; value=&quot;valore2&quot;
+                            checked=&quot;checked&quot; readonly=&quot;readonly&quot; /&gt;
+                        </p>
+                    </div>
+                </div>
+                <div class="esempio">
+                    <div class="rendering">Input (type=reset): <input type="reset" name="i7r" value="valore" readonly="readonly" /></div>
+                    <div class="sorgente"><p>&lt;input type=&quot;reset&quot; name=&quot;i7r&quot; value=&quot;valore&quot; readonly=&quot;readonly&quot; /&gt;</p></div>
+                </div>
+                <div class="esempio">
+                    <div class="rendering">Input (type=submit): <input type="submit" name="i8r" value="valore" readonly="readonly" /></div>
+                    <div class="sorgente"><p>&lt;input type=&quot;submit&quot; name=&quot;i8r&quot; value=&quot;valore&quot; readonly=&quot;readonly&quot; /&gt;</p></div>
+                </div>
+                <div class="esempio">
+                    <div class="rendering">Input (type=image): <input type="image" name="i9r" src="big_info_2.gif" readonly="readonly" /></div>
+                    <div class="sorgente"><p>&lt;input type=&quot;image&quot; name=&quot;i9r&quot; src=&quot;big_info_2.gif&quot; readonly=&quot;readonly&quot; /&gt;</p></div>
+                </div>
+            </div>
+
+            <h2 class="sezione">Dimensione dei campi...</h2>
+            <div class="esempi">
+                <div class="esempio">
+                    <div class="rendering">Input (type=button): <input type="button" name="i1s" value="valore" size="100" /></div>
+                    <div class="sorgente"><p>&lt;input type=&quot;button&quot; name=&quot;i1s&quot; value=&quot;valore&quot; size=&quot;100&quot; /&gt;</p></div>
+                </div>
+                <div class="esempio">
+                    <div class="rendering">Input (type=text): <input type="text" name="i2s" value="valore" size="100" /></div>
+                    <div class="sorgente"><p>&lt;input type=&quot;text&quot; name=&quot;i2s&quot; value=&quot;valore&quot; size=&quot;100&quot; /&gt;</p></div>
+                </div>
+                <div class="esempio">
+                    <div class="rendering">Input (type=checkbox): <input type="checkbox" name="i3s" value="valore" checked="checked" size="100" /></div>
+                    <div class="sorgente"><p>&lt;input type=&quot;checkbox&quot; name=&quot;i3s&quot; value=&quot;valore&quot; checked=&quot;checked&quot; size=&quot;100&quot; /&gt;</p></div>
+                </div>
+                <div class="esempio">
+                    <div class="rendering">Input (type=file): <input type="file" name="i4s" size="100" /></div>
+                    <div class="sorgente"><p>&lt;input type=&quot;file&quot; name=&quot;i4s&quot; size=&quot;100&quot; /&gt;</p></div>
+                </div>
+                <div class="esempio">
+                    <div class="rendering">Input (type=password): <input type="password" name="i5s" value="valore" size="100" /></div>
+                    <div class="sorgente"><p>&lt;input type=&quot;password&quot; name=&quot;i5s&quot; value=&quot;valore&quot; size=&quot;100&quot; /&gt;</p></div>
+                </div>
+                <div class="esempio">
+                    <div class="rendering">
+                        Input (type=radio): <input type="radio" name="i6s" value="valore" />
+                        <input type="radio" name="i6s" value="valore2" checked="checked" size="100" />
+                    </div>
+                    <div class="sorgente"><p>&lt;input type=&quot;radio&quot; name=&quot;i6s&quot; value=&quot;valore&quot; /&gt;</p><p>&lt;input type=&quot;radio&quot; name=&quot;i6s&quot; value=&quot;valore2&quot; checked=&quot;checked&quot; size=&quot;100&quot; /&gt; </p>
+                    </div>
+                </div>
+                <div class="esempio">
+                    <div class="rendering">Input (type=reset): <input type="reset" name="i7s" value="valore" size="100" /></div>
+                    <div class="sorgente"><p>&lt;input type=&quot;reset&quot; name=&quot;i7s&quot; value=&quot;valore&quot; size=&quot;100&quot; /&gt;</p></div>
+                </div>
+                <div class="esempio">
+                    <div class="rendering">Input (type=submit): <input type="submit" name="i8s" value="valore" size="100" /></div>
+                    <div class="sorgente"><p>&lt;input type=&quot;submit&quot; name=&quot;i8s&quot; value=&quot;valore&quot; size=&quot;100&quot; /&gt;</p></div>
+                </div>
+                <div class="esempio">
+                    <div class="rendering">Input (type=image): <input type="image" name="i9s" src="big_info_2.gif" size="100" /></div>
+                    <div class="sorgente"><p>&lt;input type=&quot;image&quot; name=&quot;i9s&quot; src=&quot;big_info_2.gif&quot; size=&quot;100&quot; /&gt;</p></div>
+                </div>
+            </div>
+
+            <h2 class="sezione">Textarea</h2>
+            <div class="esempi">
+                <div class="esempio">
+                    <div class="rendering">
+                        <textarea rows="10" cols="50" name="i10">Testo della textarea</textarea>
+                    </div>
+                    <div class="sorgente"><p>&lt;textarea rows=&quot;10&quot; cols=&quot;50&quot; name=&quot;i10&quot;&gt;Testo della textarea&lt;/textarea&gt;</p></div>
+                </div>
+            </div>
+
+            <h2 class="sezione">Select</h2>
+            <div class="esempi">
+                <div class="esempio">
+                    <div class="rendering">
+                        Select (size=1)
+                        <select name="i11" size="1">
+                            <option>Opzione senza label e valore</option>
+                            <option value="v1">Opzione senza label</option>
+                            <option value="v2" label="label3">Opzione con label</option>
+                            <option value="v3" label="label4"></option>
+                            <option disabled="disabled">Opzione disabilitata</option>
+                            <option selected="selected">Opzione selezionata</option>
+                        </select>
+                    </div>
+                    <div class="sorgente"><p>&lt;select name=&quot;i11&quot; size=&quot;1&quot;&gt;</p><p>&lt;option&gt;Opzione senza label e valore&lt;/option&gt;</p><p>&lt;option value=&quot;v1&quot;&gt;Opzione senza label&lt;/option&gt;</p><p>&lt;option
+                            value=&quot;v2&quot; label=&quot;label3&quot;&gt;Opzione con label&lt;/option&gt;</p><p>&lt;option value=&quot;v3&quot; label=&quot;label4&quot;&gt;&lt;/option&gt;</p><p>&lt;option disabled=&quot;disabled&quot;&gt;Opzione
+                            disabilitata&lt;/option&gt;</p><p>&lt;option selected=&quot;selected&quot;&gt;Opzione selezionata&lt;/option&gt;</p><p>&lt;/select&gt;
+                        </p>
+                    </div>
+                </div>
+                <div class="esempio">
+                    <div class="rendering">
+                        Select (size=3)
+                        <select name="i12" size="3">
+                            <option>Opzione senza label e valore</option>
+                            <option value="v1">Opzione senza label</option>
+                            <option value="v2" label="label3">Opzione con label</option>
+                            <option disabled="disabled">Opzione disabilitata</option>
+                            <option selected="selected">Opzione selezionata</option>
+                        </select>
+                    </div>
+                    <div class="sorgente">
+                        <p>&lt;select name=&quot;i12&quot; size=&quot;3&quot;&gt;</p><p>&lt;option&gt;Opzione senza label e valore&lt;/option&gt;</p><p>&lt;option value=&quot;v1&quot;&gt;Opzione senza label&lt;/option&gt;</p><p>&lt;option
+                            value=&quot;v2&quot; label=&quot;label3&quot;&gt;Opzione con label&lt;/option&gt;</p><p>&lt;option value=&quot;v3&quot; label=&quot;label4&quot;&gt;&lt;/option&gt;</p><p>&lt;option disabled=&quot;disabled&quot;&gt;Opzione
+                            disabilitata&lt;/option&gt;</p><p>&lt;option selected=&quot;selected&quot;&gt;Opzione selezionata&lt;/option&gt;</p><p>&lt;/select&gt;
+                        </p>
+                    </div>
+                </div>
+                <div class="esempio">
+                    <div class="rendering">
+                        Select con gruppi (size=1)
+                        <select name="i13" size="1">
+                            <optgroup label="gruppo1">
+                                <option>Opzione senza label e valore</option>
+                                <option value="v1">Opzione senza label</option>
+                            </optgroup>
+                            <optgroup label="gruppo2">
+                                <option value="v2" label="label3">Opzione con label</option>
+                                <option disabled="disabled">Opzione disabilitata</option>
+                            </optgroup>
+                            <option selected="selected">Opzione selezionata</option>
+                        </select>
+                    </div>
+                    <div class="sorgente">
+                        <p>&lt;select name=&quot;i13&quot; size=&quot;1&quot;&gt;</p><p>&lt;optgroup label=&quot;gruppo1&quot;&gt;		</p><p>&lt;option&gt;Opzione senza label e valore&lt;/option&gt;</p><p>&lt;option value=&quot;v1&quot;&gt;Opzione senza label&lt;/option&gt;</p><p>&lt;/optgroup&gt;</p><p>&lt;optgroup label=&quot;gruppo2&quot;&gt;</p><p>&lt;option
+                            value=&quot;v2&quot; label=&quot;label3&quot;&gt;Opzione con label&lt;/option&gt;</p><p>&lt;option value=&quot;v3&quot; label=&quot;label4&quot;&gt;&lt;/option&gt;</p><p>&lt;option disabled=&quot;disabled&quot;&gt;Opzione
+                            disabilitata&lt;/option&gt;</p><p>&lt;/optgroup&gt;</p><p>&lt;option selected=&quot;selected&quot;&gt;Opzione selezionata&lt;/option&gt;</p><p>&lt;/select&gt;
+                        </p>
+                    </div>
+                </div>
+                <div class="esempio">
+                    <div class="rendering">
+                        Select con gruppi (size=3)
+                        <select name="i14" size="3">
+                            <optgroup label="gruppo1">
+                                <option>Opzione senza label e valore</option>
+                                <option value="v1">Opzione senza label</option>
+                            </optgroup>
+                            <optgroup label="gruppo2">
+                                <option value="v2" label="label3">Opzione con label</option>
+                                <option disabled="disabled">Opzione disabilitata</option>
+                            </optgroup>
+                            <option selected="selected">Opzione selezionata</option>
+                        </select>
+                    </div>
+                    <div class="sorgente">
+                        <p>&lt;select name=&quot;i14&quot; size=&quot;3&quot;&gt;</p><p>&lt;optgroup label=&quot;gruppo1&quot;&gt;		</p><p>&lt;option&gt;Opzione senza label e valore&lt;/option&gt;</p><p>&lt;option value=&quot;v1&quot;&gt;Opzione senza label&lt;/option&gt;</p><p>&lt;/optgroup&gt;</p><p>&lt;optgroup label=&quot;gruppo2&quot;&gt;</p><p>&lt;option
+                            value=&quot;v2&quot; label=&quot;label3&quot;&gt;Opzione con label&lt;/option&gt;</p><p>&lt;option value=&quot;v3&quot; label=&quot;label4&quot;&gt;&lt;/option&gt;</p><p>&lt;option disabled=&quot;disabled&quot;&gt;Opzione
+                            disabilitata&lt;/option&gt;</p><p>&lt;/optgroup&gt;</p><p>&lt;option selected=&quot;selected&quot;&gt;Opzione selezionata&lt;/option&gt;</p><p>&lt;/select&gt;
+                        </p>
+                    </div>
+                </div>
+                <div class="esempio">
+                    <div class="rendering">
+                        Select multipla (size=1)
+                        <select name="i15" size="1" multiple="multiple">
+                            <option>Opzione senza label e valore</option>
+                            <option value="v1">Opzione senza label</option>
+                            <option value="v2" label="label3">Opzione con label</option>
+                            <option disabled="disabled">Opzione disabilitata</option>
+                            <option selected="selected">Opzione selezionata</option>
+                        </select>
+                    </div>
+                    <div class="sorgente"><p>&lt;select name=&quot;i15&quot; size=&quot;1&quot; multiple=&quot;multiple&quot;&gt; </p><p>&lt;option&gt;Opzione senza label e valore&lt;/option&gt;</p><p>&lt;option value=&quot;v1&quot;&gt;Opzione senza label&lt;/option&gt;</p><p>&lt;option
+                            value=&quot;v2&quot; label=&quot;label3&quot;&gt;Opzione con label&lt;/option&gt;</p><p>&lt;option value=&quot;v3&quot; label=&quot;label4&quot;&gt;&lt;/option&gt;</p><p>&lt;option disabled=&quot;disabled&quot;&gt;Opzione
+                            disabilitata&lt;/option&gt;</p><p>&lt;option selected=&quot;selected&quot;&gt;Opzione selezionata&lt;/option&gt;</p><p>&lt;/select&gt;
+                        </p>
+                    </div>
+                </div>
+                <div class="esempio">
+                    <div class="rendering">
+                        Select multipla (size=3)
+                        <select name="i16" size="3" multiple="multiple">
+                            <option>Opzione senza label e valore</option>
+                            <option value="v1">Opzione senza label</option>
+                            <option value="v2" label="label3">Opzione con label</option>
+                            <option disabled="disabled">Opzione disabilitata</option>
+                            <option selected="selected">Opzione selezionata</option>
+                        </select>
+                    </div>
+                    <div class="sorgente">
+                        <p>&lt;select name=&quot;i16&quot; size=&quot;3&quot; multiple=&quot;multiple&quot;&gt;</p><p>&lt;option&gt;Opzione senza label e valore&lt;/option&gt;</p><p>&lt;option value=&quot;v1&quot;&gt;Opzione senza label&lt;/option&gt;</p><p>&lt;option
+                            value=&quot;v2&quot; label=&quot;label3&quot;&gt;Opzione con label&lt;/option&gt;</p><p>&lt;option value=&quot;v3&quot; label=&quot;label4&quot;&gt;&lt;/option&gt;</p><p>&lt;option disabled=&quot;disabled&quot;&gt;Opzione
+                            disabilitata&lt;/option&gt;</p><p>&lt;option selected=&quot;selected&quot;&gt;Opzione selezionata&lt;/option&gt;</p><p>&lt;/select&gt;
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="sezione">Bottoni</h2>
+            <div class="esempi">
+                <div class="esempio">
+                    <div class="rendering">
+                        <button name="i17" value="valore" type="submit">contenuto (submit)</button>
+                    </div>
+                    <div class="sorgente"><p>&lt;button name=&quot;i17&quot; value=&quot;valore&quot; type=&quot;submit&quot;&gt;contenuto (submit)&lt;/button&gt;</p></div>
+                </div>
+                <div class="esempio">
+                    <div class="rendering">
+                        <button name="i18" value="valore" type="reset">contenuto (reset)</button>
+                    </div>
+                    <div class="sorgente"><p>&lt;button name=&quot;i18&quot; value=&quot;valore&quot; type=&quot;reset&quot;&gt;contenuto (reset)&lt;/button&gt;</p></div>
+                </div>
+                <div class="esempio">
+                    <div class="rendering">
+                        <button name="i19" value="valore" type="button">contenuto (button)</button>
+                    </div>
+                    <div class="sorgente"><p>&lt;button name=&quot;i19&quot; value=&quot;valore&quot; type=&quot;button&quot;&gt;contenuto (button)&lt;/button&gt;</p></div>
+                </div>
+                <div class="esempio">
+                    <div class="rendering">
+                        <button name="i20" value="valore" type="button">
+                            <p>contenuto</p>
+                            <hr />
+                            <p>articolato</p>
+                        </button>
+                    </div>
+                    <div class="sorgente"><p>&lt;button name=&quot;i20&quot; value=&quot;valore&quot; type=&quot;button&quot;&gt; &lt;p&gt;contenuto&lt;/p&gt; &lt;hr /&gt; &lt;p&gt;articolato&lt;/p&gt; &lt;/button&gt;</p></div>
+                </div>
+                <div class="esempio">
+                    <div class="rendering">
+                        <button name="i20b" value="valore" type="button">
+                            <p>contenuto</p>
+                            <hr />
+                            <p><img src="big_info_2.gif" alt="Testo alternativo" /></p>
+                            <p>articolato</p>
+                        </button>
+                    </div>
+                    <div class="sorgente">
+                        <p>&lt;button name=&quot;i20b&quot; value=&quot;valore&quot; type=&quot;button&quot;&gt; &lt;p&gt;contenuto&lt;/p&gt; &lt;hr /&gt; &lt;p&gt;&lt;img src=&quot;big_info_2.gif&quot; alt=&quot;Testo alternativo&quot;/&gt;&lt;/p&gt; &lt;p&gt;articolato&lt;/p&gt; &lt;/button&gt;
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="sezione">Label</h2>
+            <div class="esempi">
+                <div class="esempio">
+                    <div class="rendering">Campo: <input type="text" name="i21" id="Idi21" /> Label: <label for="Idi21">Label per il campo</label></div>
+                    <div class="sorgente"><p>Campo: &lt;input type=&quot;text&quot; name=&quot;i21&quot; id=&quot;Idi21&quot; /&gt; Label: &lt;label for=&quot;Idi21&quot;&gt;Label per il campo&lt;/label&gt;</p></div>
+                </div>
+                <div class="esempio">
+                    <div class="rendering">Campo disabilitato: <input type="text" name="i22" id="Idi22" disabled="disabled" /> Label: <label for="Idi22">Label per il campo</label></div>
+                    <div class="sorgente">
+                        <p>Campo disabilitato: &lt;input type=&quot;text&quot; name=&quot;i22&quot; id=&quot;Idi22&quot; disabled=&quot;disabled&quot; /&gt; Label: &lt;label for=&quot;Idi22&quot;&gt;Label per il campo&lt;/label&gt;</p>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="sezione">Campi raggruppati (fieldset)</h2>
+            <div class="esempi">
+                <div class="esempio">
+                    <div class="rendering">
+                        <fieldset>
+                            Input (type=button): <input type="button" name="i23" value="valore" />
+
+                            Input (type=text): <input type="text" name="i24" value="valore" />
+
+                            Input (type=checkbox): <input type="checkbox" name="i25" value="valore" checked="checked" />
+
+                            Input (type=file): <input type="file" name="i26" />
+                        </fieldset>
+                        <fieldset>
+                            <legend>Legenda del secondo fieldset</legend>
+
+                            Input (type=password): <input type="password" name="i27" value="valore" />
+
+                            Input (type=radio): <input type="radio" name="i28" value="valore" />
+                            <input type="radio" name="i29" value="valore2" checked="checked" />
+
+                            Input (type=reset): <input type="reset" name="i30" value="valore" />
+
+                            Input (type=submit): <input type="submit" name="i31" value="valore" />
+
+                            Input (type=image): <input type="image" name="i32" src="big_info_2.gif" />
+                        </fieldset>
+                    </div>
+                    <div class="sorgente"><p>&lt;fieldset&gt;</p><p> Input (type=button): &lt;input type=&quot;button&quot; name=&quot;i23&quot; value=&quot;valore&quot; /&gt;</p><p>Input (type=text): &lt;input type=&quot;text&quot; name=&quot;i24&quot;
+                            value=&quot;valore&quot; /&gt;</p><p>Input (type=checkbox): &lt;input type=&quot;checkbox&quot; name=&quot;i25&quot; value=&quot;valore&quot; checked=&quot;checked&quot; /&gt;</p><p>Input (type=file): &lt;input
+                            type=&quot;file&quot; name=&quot;i26&quot; /&gt;</p><p>&lt;/fieldset&gt;</p><p>&lt;fieldset&gt;</p><p>&lt;legend&gt;Legenda del secondo fieldset&lt;/legend&gt;</p><p>Input (type=password): &lt;input type=&quot;password&quot;
+                            name=&quot;i27&quot; value=&quot;valore&quot; /&gt;</p><p>Input (type=radio): &lt;input type=&quot;radio&quot; name=&quot;i28&quot; value=&quot;valore&quot; /&gt; &lt;input type=&quot;radio&quot; name=&quot;i29&quot;
+                            value=&quot;valore2&quot; checked=&quot;checked&quot; /&gt;</p><p>Input (type=reset): &lt;input type=&quot;reset&quot; name=&quot;i30&quot; value=&quot;valore&quot; /&gt;</p><p>Input (type=submit): &lt;input
+                            type=&quot;submit&quot; name=&quot;i31&quot; value=&quot;valore&quot; /&gt;</p><p>Input (type=image): &lt;input type=&quot;image&quot; name=&quot;i32&quot; src=&quot;big_info_2.gif&quot; /&gt;</p><p>&lt;/fieldset&gt;
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="sezione">Nuove Tipologie di input in HTML5</h2>
+
+            <div class="esempi">
+                <div class="esempio">
+                    <div class="rendering">Input (con autocomplete): <input type="text" name="i36" value="valore" autocomplete="on" /></div>
+                    <div class="sorgente"><p>&lt;input type=&quot;text&quot; name=&quot;i33&quot; value=&quot;valore&quot; autocomplete=&quot;on&quot;/&gt;</p></div>
+                </div>
+                <div class="esempio">
+                    <div class="rendering">Input (con pattern): <input type="text" name="i34" value="IDabc" pattern="ID[a-z]+" /></div>
+                    <div class="sorgente"><p>&lt;input type=&quot;text&quot; name=&quot;i34&quot; value=&quot;IDabc&quot; pattern=&quot;ID[a-z]+&quot;/&gt;</p></div>
+                </div>
+                <div class="esempio">
+                    <div class="rendering">Input (con placeholder): <input type="text" name="i35" placeholder="Inserire qualcosa..." /></div>
+                    <div class="sorgente"><p>&lt;input type=&quot;text&quot; name=&quot;i35&quot; placeholder=&quot;Inserire qualcosa...&quot;/&gt;</p></div>
+                </div>
+                <div class="esempio">
+                    <div class="rendering">Input (required): <input type="text" value="qualcosa" name="i36" required="required" /></div>
+                    <div class="sorgente"><p>&lt;input type=&quot;text&quot; value=&quot;qualcosa&quot; name=&quot;i36&quot; required=&quot;required&quot;/&gt;</p></div>
+                </div>
+                <div class="esempio">
+                    <div class="rendering">Input (type=tel): <input type="tel" name="i37" value="333444" /></div>
+                    <div class="sorgente"><p>&lt;input type=&quot;tel&quot; name=&quot;i37&quot; value=&quot;333444&quot; /&gt;</p></div>
+                </div>
+                <div class="esempio">
+                    <div class="rendering">Input (type=search): <input type="search" name="i38" value="valore" /></div>
+                    <div class="sorgente"><p>&lt;input type=&quot;search&quot; name=&quot;i38&quot; value=&quot;valore&quot; /&gt;</p></div>
+                </div>
+                <div class="esempio">
+                    <div class="rendering">Input (type=url): <input type="url" name="i39" value="http://pippo.it/pluto" /></div>
+                    <div class="sorgente"><p>&lt;input type=&quot;url&quot; name=&quot;i39&quot; value=&quot;http://pippo.it/pluto&quot; /&gt;</p></div>
+                </div>
+                <div class="esempio">
+                    <div class="rendering">Input (type=email): <input type="email" name="i40" value="gdp@pippo.net" /></div>
+                    <div class="sorgente"><p>&lt;input type=&quot;email&quot; name=&quot;i40&quot; value=&quot;gdp@pippo.net&quot; /&gt;</p></div>
+                </div>
+                <div class="esempio">
+                    <div class="rendering">Input (type=number, con min, max e step): <input type="number" name="i41" value="4" min="2" max="8" step="2" /></div>
+                    <div class="sorgente"><p>&lt;input type=&quot;number&quot; name=&quot;i41&quot; value=&quot;4&quot; min=&quot;2&quot; max=&quot;8&quot; step=&quot;2&quot;/&gt;</p></div>
+                </div>
+                <div class="esempio">
+                    <div class="rendering">Input (type=range, con min, max e step): <input type="range" name="i42" value="4" min="2" max="8" step="2" /></div>
+                    <div class="sorgente"><p>&lt;input type=&quot;range&quot; name=&quot;i42&quot; value=&quot;4&quot; min=&quot;2&quot; max=&quot;8&quot; step=&quot;2&quot; /&gt;</p></div>
+                </div>
+                <div class="esempio">
+                    <div class="rendering">Input (type=color): <input type="color" name="i43" value="#555555" /></div>
+                    <div class="sorgente"><p>&lt;input type=&quot;color&quot; name=&quot;i43&quot; value=&quot;#555555&quot; /&gt;</p></div>
+                </div>
+                <div class="esempio">
+                    <div class="rendering">Input (type=date, con min e max): <input type="date" name="i44" min="2015-01-01" max="2020-12-31" /></div>
+                    <div class="sorgente"><p>&lt;input type=&quot;date&quot; name=&quot;i44&quot; min=&quot;2015-01-01&quot; max=&quot;2020-12-31&quot; /&gt;</p></div>
+                </div>
+                <div class="esempio">
+                    <div class="rendering">Input (type=time): <input type="time" name="i45" /></div>
+                    <div class="sorgente"><p>&lt;input type=&quot;time&quot; name=&quot;i45&quot;/&gt;</p></div>
+                </div>
+                <div class="esempio">
+                    <div class="rendering">Input (type=email, multiplo): <input type="email" name="i46" value="gdp@pippo.com, gdp1@pluto.it" multiple="multiple" /></div>
+                    <div class="sorgente"><p>&lt;input type=&quot;email&quot; name=&quot;i46&quot; value=&quot;gdp@pippo.com, gdp1@pluto.it&quot; multiple=&quot;multiple&quot; /&gt;</p></div>
+                </div>
+                <div class="esempio">
+                    <div class="rendering">Input (type=file, multiplo): <input type="file" name="i47" multiple="multiple" /></div>
+                    <div class="sorgente"><p>&lt;input type=&quot;file&quot; name=&quot;i47&quot; multiple=&quot;multiple&quot; /&gt;</p></div>
+                </div>
+                <div class="esempio">
+                    <div class="rendering">Input (type=submit con formaction e formnovalidate): <input type="submit" name="i48" value="submit SENZA validazione" formaction="pippo.php" formnovalidate="formnovalidate" /></div>
+                    <div class="sorgente"><p>&lt;input type=&quot;submit&quot; name=&quot;i48&quot; value=&quot;submit SENZA validazione&quot; formaction=&quot;pippo.php&quot; formnovalidate=&quot;formnovalidate&quot; /&gt;</p></div>
+                </div>
+                <div class="esempio">
+                    <div class="rendering">Input (type=submit): <input type="submit" name="i49" value="submit CON validazione" /></div>
+                    <div class="sorgente"><p>&lt;input type=&quot;submit&quot; name=&quot;i49&quot; value=&quot;submit CON validazione&quot; /&gt;</p></div>
+                </div>
+            </div>
+        </form>
+    </body>
+</html>
