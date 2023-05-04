@@ -93,3 +93,19 @@ h3 {
 .esempio .sorgente .commento:after {
     content: "*/";
 }
+
+.highlight {
+	background-color: yellow;
+}
+
+.block-container {
+	border-left: 1px dotted gray;
+}
+
+.block-container .block-container {
+	margin-left:1em; 
+}
+
+.block-container + .block-container {
+	margin-top: 1em;
+}
